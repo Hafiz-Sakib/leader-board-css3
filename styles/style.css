@@ -78,6 +78,12 @@ hr {
 .courses {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  border: 1px solid white;
+  border-radius: 10px;
+  filter: drop-shadow(50px gray);
 }
 .course-title {
   font-size: 20px;
@@ -112,4 +118,36 @@ hr {
   background-color: lightpink;
   opacity: 0.8;
   font-size: 15px;
+}
+/* ...............Media Query........................ */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .top-players,
+  .blogs,
+  .blog-info,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blogs,
+  .blog-info,
+  .courses {
+    flex-direction: column;
+  }
+}
+/* tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 988px) {
+  .container {
+    width: 100%;
+  }
+  .top-players {
+    background-color: greenyellow;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
