@@ -74,3 +74,42 @@ hr {
   color: #562eff;
   font-size: 16px;
 }
+/* ......................Courses styles......................... */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.course-title {
+  font-size: 20px;
+}
+.courses .courses-banner img {
+  width: 224px;
+  height: 104px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: orange;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-duration {
+  color: #f1233b;
+  left: 33.98%;
+  right: 62.03%;
+  top: 92.49%;
+  bottom: 5.87%;
+  width: 80px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: lightpink;
+  opacity: 0.8;
+  font-size: 15px;
+}
